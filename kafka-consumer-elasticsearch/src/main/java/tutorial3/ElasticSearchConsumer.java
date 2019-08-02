@@ -41,9 +41,9 @@ public class ElasticSearchConsumer {
 
     public static RestHighLevelClient createClient(){
 
-           String hostname = "kafka-4354220244.us-west-2.bonsaisearch.net";
-           String username = "fr423rkc9u";
-           String password = "v7wurgpd2q";
+           String hostname = "<hostname>";
+           String username = "<username>";
+           String password = "<password>";
 
            final CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
            credentialsProvider.setCredentials(AuthScope.ANY, new UsernamePasswordCredentials(username, password));
@@ -93,6 +93,7 @@ public class ElasticSearchConsumer {
 
         KafkaConsumer<String, String> consumer = createConsumer("customer_reviews");
 
+        // insert data into Cassansdra
         Cluster cluster = Cluster.builder()
                 .addContactPoints(serverIP)
                 .build();
