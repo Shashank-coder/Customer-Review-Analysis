@@ -17,7 +17,7 @@ We created a data streamer using Java which streamed data from 6 different data 
 On the cloud the elastic search is connected to kibana which is also on the cloud in which we created our own dashboard of visualizations. Here we can observe the real time visualizations of the streamed data.
 While locally we use pyspark to import data from cassandra into dataframe and perform various data analysis to achieve yearly product trend analysis.
 
-
+![](/bdarch.jpg)
 
 
 
@@ -60,7 +60,7 @@ Once we have handled the data flow, we now have to do processing on this to get 
 Real Time Visualization of streamed data on Kibana
 
 
-
+![](/bigdata.png)
 
 
 
@@ -75,6 +75,10 @@ Real Time Visualization of streamed data on Kibana
 Data Analysis Visualization on complete Data at an instance
 
 Here is the pie chart distribution of top 3 products each year on the basis of star rating.
+![](/bdpie1.jpg)
+![](/bdpie2.jpg)
+![](/bdpie3.jpg)
+![](/bdpie4.jpg)
 
 
 
